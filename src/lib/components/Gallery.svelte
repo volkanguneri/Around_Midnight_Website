@@ -42,9 +42,8 @@
 	};
 </script>
 
-<section class="bg-black py-24" id="gallery">
+<section class="bg-black" id="gallery">
 	<div class="container mx-auto px-4">
-		<h2 class="font-moon mb-16 text-center text-4xl text-white md:text-5xl">Galerie</h2>
 		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each images as image, i}
 				<div class="group relative aspect-square overflow-hidden rounded-lg">

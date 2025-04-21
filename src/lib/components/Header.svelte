@@ -3,7 +3,6 @@
 	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
 	const menuItems = [
-		{ href: '/', label: 'Bienvenu' },
 		{ href: '#trio', label: 'Le Trio' },
 		{ href: '#musicians', label: 'Les Musiciens' },
 		{ href: '#gallery', label: 'Galerie' },
@@ -75,7 +74,7 @@
 	<!-- Mobile menu -->
 	{#if isMenuOpen}
 		<div class="bg-black/95 md:hidden">
-			<div class="space-y-1 px-2 pt-2 pb-3">
+			<div class="space-y-1 px-2 pb-3 pt-2">
 				{#each menuItems as item}
 					<a
 						href={item.href}

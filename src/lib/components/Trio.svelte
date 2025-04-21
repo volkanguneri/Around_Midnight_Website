@@ -16,11 +16,13 @@
 			onload={() => (imageLoaded = true)}
 		/>
 		<div class="absolute inset-0 bg-black/60"></div>
-		<div class="absolute inset-0 flex items-center justify-center">
+		<div class="absolute inset-0 flex items-center justify-center py-8 md:py-16">
 			<div class="mx-auto max-w-4xl px-4">
-				<div class="space-y-8 text-center">
-					<h2 class="font-moon text-4xl text-white md:text-5xl">Jazz & Blues pour danser</h2>
-					<div class="space-y-6 text-lg leading-relaxed text-gray-100">
+				<div class="space-y-3 text-center md:space-y-8">
+					<h2 class="font-moon text-xl text-white md:text-3xl lg:text-5xl">
+						Jazz & Blues pour danser
+					</h2>
+					<div class="text-xs leading-tight text-gray-100 md:text-lg md:leading-relaxed">
 						<p>
 							Envie d'une soirée où la musique vous fait vibrer autant que la danse ? Around
 							Midnight est le trio idéal pour donner vie à vos événements blues.

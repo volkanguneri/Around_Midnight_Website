@@ -21,7 +21,6 @@
 				<div class="rounded-lg p-8">
 					<h2 class="font-moon mb-12 text-center text-4xl text-white">Contact</h2>
 					<div class="space-y-4 text-center text-lg text-white">
-						<h3 class="font-moon text-2xl">Réservations</h3>
 						<p>+33 6 58 78 25 61</p>
 						<p>juliette-chevalier35@hotmail.fr</p>
 					</div>

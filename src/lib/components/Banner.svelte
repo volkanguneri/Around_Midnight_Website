@@ -8,19 +8,21 @@
 </script>
 
 <section class="relative" id="banner">
-	<div class="relative w-full h-screen">
+	<div class="relative w-full bg-black md:h-screen">
 		<img
 			src="/images/main.jpg"
 			alt="Around Midnight Banner"
-			class="w-full h-full object-cover transition-opacity duration-1000 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
+			class="h-full w-full object-contain transition-opacity duration-1000 md:object-cover {imageLoaded
+				? 'opacity-100'
+				: 'opacity-0'}"
 			onload={() => (imageLoaded = true)}
 		/>
 		<div class="absolute inset-0 bg-black/60"></div>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<div class="mx-auto max-w-4xl px-4">
-				<div class="space-y-8 text-center">
-					<h1 class="font-moon text-6xl text-white md:text-7xl">Around Midnight</h1>
-					<p class="text-xl md:text-2xl text-gray-200">Trio Blues, Jazz & Soul</p>
+				<div class="space-y-4 text-center md:space-y-8">
+					<h1 class="font-moon text-4xl text-white md:text-6xl lg:text-7xl">Around Midnight</h1>
+					<p class="text-lg text-gray-200 md:text-xl lg:text-2xl">Trio Blues, Jazz & Soul</p>
 				</div>
 			</div>
 		</div>

@@ -40,7 +40,7 @@ For more than twenty years, Arnaud has performed on stage alongside numerous gro
 	];
 </script>
 
-<section class="bg-opacity-90 relative bg-black py-16">
+<section class="relative bg-black bg-opacity-90 py-16">
 	<div class="absolute inset-0 z-0">
 		<img
 			src="/images/texture-bg.jpg"
@@ -51,8 +51,7 @@ For more than twenty years, Arnaud has performed on stage alongside numerous gro
 	</div>
 
 	<div class="relative z-10">
-		<h2 class="font-moon mb-16 text-center text-4xl text-white md:text-5xl">Les Musiciens</h2>
-		<div class="mx-auto max-w-7xl space-y-24 px-4 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 			{#each musicians as musician, i}
 				<div class="flex flex-col gap-8 md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
 					<div class="md:w-1/3">
