@@ -9,7 +9,7 @@
 
 <div class="relative min-h-screen">
 	<Banner />
-	<section id="trio" class="mb-4 mt-10 scroll-mt-16 md:mb-8 md:mt-0">
+	<section id="trio" class="md:mt-35 mb-4 mt-10 scroll-mt-16">
 		<Trio />
 	</section>
 	<section id="musicians" class="mb-4 scroll-mt-16 md:mb-8">
