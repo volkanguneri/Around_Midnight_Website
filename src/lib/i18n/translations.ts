@@ -19,9 +19,10 @@ export const translations = {
 		// Trio section
 		trio: {
 			title: 'Le Trio',
-			description:
-				"Envie d'une soirée où la musique vous fait vibrer autant que la danse ? Around Midnight est le trio idéal pour donner vie à vos événements blues. Avec un répertoire éclectique mêlant Amy Winehouse, David Bowie, Ella Fitzgerald et bien d'autres, le groupe tisse un univers à la fois envoûtant et énergique. La voix intense et expressive de Juliette Chevalier, portée par le jeu virtuose d'Arnaud Lacarte à la guitare et les Hugues Lasserre à la contrebasse, crée une ambiance irrésistible. Entre joie, intensité et émotion, laissez-vous emporter par la profondeur d'une musique vivante, faite pour être partagée pleinement.",
-			bookingButton: 'Réserver'
+			description: [
+				"Envie d'une soirée où la musique vous fait vibrer autant que la danse ? Around Midnight est le trio idéal pour donner vie à vos événements blues. Avec un répertoire éclectique mêlant Amy Winehouse, David Bowie, Ella Fitzgerald et bien d'autres, le groupe tisse un univers à la fois envoûtant et énergique.",
+				"La voix intense et expressive de Juliette Chevalier, portée par le jeu virtuose d'Arnaud Lacarte à la guitare et les Hugues Lasserre à la contrebasse, crée une ambiance irrésistible. Entre joie, intensité et émotion, laissez-vous emporter par la profondeur d'une musique vivante, faite pour être partagée pleinement."
+			]
 		},
 		// Musicians section
 		musicians: {
@@ -82,9 +83,10 @@ export const translations = {
 		// Trio section
 		trio: {
 			title: 'The Trio',
-			description:
-				"Looking for an evening where music makes you vibrate as much as dancing? Around Midnight is the ideal trio to bring your blues events to life. With an eclectic repertoire blending Amy Winehouse, David Bowie, Ella Fitzgerald and many others, the group weaves a universe that is both enchanting and energetic. The intense and expressive voice of Juliette Chevalier, carried by Arnaud Lacarte's virtuoso guitar playing and Hugues Lasserre's double bass, creates an irresistible atmosphere. Between joy, intensity and emotion, let yourself be carried away by the depth of living music, made to be fully shared.",
-			bookingButton: 'Book Now'
+			description: [
+				'Looking for an evening where music makes you vibrate as much as dancing? Around Midnight is the ideal trio to bring your blues events to life. With an eclectic repertoire blending Amy Winehouse, David Bowie, Ella Fitzgerald and many others, the group weaves a universe that is both enchanting and energetic.',
+				"The intense and expressive voice of Juliette Chevalier, carried by Arnaud Lacarte's virtuoso guitar playing and Hugues Lasserre's double bass, creates an irresistible atmosphere. Between joy, intensity and emotion, let yourself be carried away by the depth of living music, made to be fully shared."
+			]
 		},
 		// Musicians section
 		musicians: {

@@ -51,7 +51,7 @@
 									{t(`musicians.${musician.id}.instrument`)}
 								</h4>
 								<div class="space-y-4 text-gray-300">
-									<p>{t(`musicians.${musician.id}.bio`)}</p>
+									<p class="mb-10">{t(`musicians.${musician.id}.bio`)}</p>
 								</div>
 							</div>
 						</div>

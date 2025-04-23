@@ -98,10 +98,36 @@
 					<a
 						href={item.href}
 						class="font-moon block px-3 py-2 text-gray-300 transition-colors duration-200 hover:text-white"
+						onclick={(e) => {
+							handleClick(e, item.href);
+							isMenuOpen = false;
+						}}
 					>
 						{t(item.key)}
 					</a>
 				{/each}
+				<div class="flex items-center space-x-4 px-3 pt-4">
+					<button
+						class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
+						class:opacity-100={getCurrentLang() === 'fr'}
+						onclick={() => {
+							setCurrentLang('fr');
+							isMenuOpen = false;
+						}}
+					>
+						<img src="/images/fr-flag.svg" alt="Français" class="h-4 w-6 object-cover" />
+					</button>
+					<button
+						class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
+						class:opacity-100={getCurrentLang() === 'en'}
+						onclick={() => {
+							setCurrentLang('en');
+							isMenuOpen = false;
+						}}
+					>
+						<img src="/images/en-flag.svg" alt="English" class="h-4 w-6 object-cover" />
+					</button>
+				</div>
 			</div>
 		</div>
 	{/if}
