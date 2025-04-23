@@ -1,13 +1,14 @@
 <script lang="ts">
-	let isMenuOpen = false;
+	import { getCurrentLang, setCurrentLang, t } from '$lib/i18n';
+	let isMenuOpen = $state(false);
 	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
 	const menuItems = [
-		{ href: '#trio', label: 'Le Trio' },
-		{ href: '#musicians', label: 'Les Musiciens' },
-		{ href: '#gallery', label: 'Galerie' },
-		{ href: '#videos', label: 'Vidéos' },
-		{ href: '#contact', label: 'Contact' }
+		{ href: '#trio', key: 'menu.trio' },
+		{ href: '#musicians', key: 'menu.musicians' },
+		{ href: '#gallery', key: 'menu.gallery' },
+		{ href: '#videos', key: 'menu.videos' },
+		{ href: '#contact', key: 'menu.contact' }
 	];
 
 	const handleClick = (e: MouseEvent, href: string) => {
@@ -37,9 +38,27 @@
 						class="font-moon text-gray-300 transition-colors duration-200 hover:text-white"
 						onclick={(e) => handleClick(e, item.href)}
 					>
-						{item.label}
+						{t(item.key)}
 					</a>
 				{/each}
+			</div>
+
+			<!-- Language switcher -->
+			<div class="hidden items-center space-x-4 md:flex">
+				<button
+					class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
+					class:opacity-100={getCurrentLang() === 'fr'}
+					onclick={() => setCurrentLang('fr')}
+				>
+					<img src="/images/fr-flag.svg" alt="Français" class="h-4 w-6 object-cover" />
+				</button>
+				<button
+					class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
+					class:opacity-100={getCurrentLang() === 'en'}
+					onclick={() => setCurrentLang('en')}
+				>
+					<img src="/images/en-flag.svg" alt="English" class="h-4 w-6 object-cover" />
+				</button>
 			</div>
 
 			<!-- Mobile menu button -->
@@ -80,7 +99,7 @@
 						href={item.href}
 						class="font-moon block px-3 py-2 text-gray-300 transition-colors duration-200 hover:text-white"
 					>
-						{item.label}
+						{t(item.key)}
 					</a>
 				{/each}
 			</div>

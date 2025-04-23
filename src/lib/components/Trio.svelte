@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { t } from '$lib/i18n'; // Removed .svelte from the import statement
 	let imageLoaded = false;
 
 	onMount(() => {
@@ -20,26 +21,10 @@
 			<div class="mx-auto max-w-4xl px-4">
 				<div class="space-y-3 text-center md:space-y-8">
 					<h2 class="font-moon text-xl text-white md:text-3xl lg:text-5xl">
-						Jazz & Blues pour danser
+						{t('trio.title')}
 					</h2>
 					<div class="text-xs leading-tight text-gray-100 md:text-lg md:leading-relaxed">
-						<p>
-							Envie d'une soirée où la musique vous fait vibrer autant que la danse ? Around
-							Midnight est le trio idéal pour donner vie à vos événements blues.
-						</p>
-						<p>
-							Avec un répertoire éclectique mêlant Amy Winehouse, David Bowie, Ella Fitzgerald et
-							bien d'autres, le groupe tisse un univers à la fois envoûtant et énergique.
-						</p>
-						<p>
-							La voix intense et expressive de Juliette Chevalier, portée par le jeu virtuose
-							d'Arnaud Lacarte à la guitare et les Hugues Lasserre à la contrebasse, crée une
-							ambiance irrésistible.
-						</p>
-						<p>
-							Entre joie, intensité et émotion, laissez-vous emporter par la profondeur d'une
-							musique vivante, faite pour être partagée pleinement.
-						</p>
+						<p>{t('trio.description')}</p>
 					</div>
 				</div>
 			</div>

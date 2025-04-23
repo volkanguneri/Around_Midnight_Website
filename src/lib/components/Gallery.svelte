@@ -1,37 +1,38 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { t } from '$lib/i18n/language.svelte';
 
 	interface GalleryImage {
 		src: string;
-		alt: string;
-		caption: string;
+		altKey: string;
+		captionKey: string;
 	}
 
 	const images: GalleryImage[] = [
 		{
 			src: '/images/main.jpg',
-			alt: 'Around Midnight',
-			caption: 'Around Midnight'
+			altKey: 'banner.title',
+			captionKey: 'banner.title'
 		},
 		{
 			src: '/images/trio-photo.jpg',
-			alt: 'Le Trio',
-			caption: 'Le Trio'
+			altKey: 'menu.trio',
+			captionKey: 'menu.trio'
 		},
 		{
 			src: '/images/juliette.jpg',
-			alt: 'Juliette Chevalier',
-			caption: 'Juliette Chevalier'
+			altKey: 'musicians.juliette.name',
+			captionKey: 'musicians.juliette.name'
 		},
 		{
 			src: '/images/arnaud.jpg',
-			alt: 'Arnaud Lacarte',
-			caption: 'Arnaud Lacarte'
+			altKey: 'musicians.arnaud.name',
+			captionKey: 'musicians.arnaud.name'
 		},
 		{
 			src: '/images/hugues.jpg',
-			alt: 'Hugues Lasserre',
-			caption: 'Hugues Lasserre'
+			altKey: 'musicians.hugues.name',
+			captionKey: 'musicians.hugues.name'
 		}
 	];
 
@@ -49,7 +50,7 @@
 				<div class="group relative aspect-square overflow-hidden rounded-lg">
 					<img
 						src={image.src}
-						alt={image.alt}
+						alt={t(image.altKey)}
 						class="h-full w-full object-cover transition-all duration-1000 {imageLoaded[i]
 							? 'scale-100 opacity-100'
 							: 'scale-105 opacity-0'} group-hover:scale-110"
@@ -58,7 +59,7 @@
 					<div
 						class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 					>
-						<p class="text-lg text-white">{image.caption}</p>
+						<p class="text-lg text-white">{t(image.captionKey)}</p>
 					</div>
 				</div>
 			{/each}
