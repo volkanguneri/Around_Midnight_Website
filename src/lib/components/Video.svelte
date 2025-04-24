@@ -19,7 +19,7 @@
 	];
 </script>
 
-<section class="relative bg-black py-24" id="videos">
+<section class="relative bg-black" id="videos">
 	<div class="container mx-auto px-4">
 		<div class="grid gap-8 md:grid-cols-2">
 			{#each videos as video}

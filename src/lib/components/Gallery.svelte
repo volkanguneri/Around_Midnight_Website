@@ -56,7 +56,7 @@
 	};
 </script>
 
-<section class="relative bg-black py-16" id="gallery">
+<section class="relative bg-black" id="gallery">
 	<div class="container mx-auto px-4">
 		<div class="relative flex items-center justify-center gap-4">
 			<!-- Image précédente -->

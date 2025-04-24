@@ -46,15 +46,15 @@
 			<!-- Language switcher -->
 			<div class="hidden items-center space-x-4 md:flex">
 				<button
-					class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
-					class:opacity-100={getCurrentLang() === 'fr'}
+					class="flex items-center space-x-1 opacity-50 transition-opacity hover:opacity-80"
+					class:opacity-80={getCurrentLang() === 'fr'}
 					onclick={() => setCurrentLang('fr')}
 				>
 					<img src="/images/fr-flag.svg" alt="Français" class="h-4 w-6 object-cover" />
 				</button>
 				<button
-					class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
-					class:opacity-100={getCurrentLang() === 'en'}
+					class="flex items-center space-x-1 opacity-50 transition-opacity hover:opacity-80"
+					class:opacity-80={getCurrentLang() === 'en'}
 					onclick={() => setCurrentLang('en')}
 				>
 					<img src="/images/en-flag.svg" alt="English" class="h-4 w-6 object-cover" />

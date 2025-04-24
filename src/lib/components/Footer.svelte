@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<footer class="mt-20 bg-black/80 py-6">
+<footer class="mt-20 bg-black/80">
 	<div class="mx-auto max-w-7xl px-4 text-center text-gray-400">
 		<div class="mb-4 flex justify-center space-x-8">
 			<a

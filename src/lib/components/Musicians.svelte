@@ -22,16 +22,7 @@
 	];
 </script>
 
-<section class="relative bg-black bg-opacity-90 py-16">
-	<div class="absolute inset-0 z-0">
-		<img
-			src="/images/texture-bg.jpg"
-			alt=""
-			class="h-full w-full object-cover opacity-20"
-			aria-hidden="true"
-		/>
-	</div>
-
+<section class="relative bg-black bg-opacity-90">
 	<div class="relative z-10">
 		<div class="mx-auto max-w-7xl">
 			{#each musicians as musician, i}

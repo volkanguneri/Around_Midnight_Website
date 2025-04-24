@@ -17,8 +17,8 @@
 			onload={() => (imageLoaded = true)}
 		/>
 		<div class="absolute inset-0 bg-black/60"></div>
-		<div class="absolute inset-0 flex items-start justify-center pt-28 md:pt-60">
-			<div class="mx-auto max-w-lg px-4">
+		<div class="absolute inset-0 flex items-center justify-center">
+			<div class="mx-auto max-w-lg px-6 sm:px-8">
 				<div class="space-y-3 text-center md:space-y-8">
 					<div
 						class="space-y-4 px-2 text-justify text-xs leading-tight text-gray-100 md:text-lg md:leading-relaxed"
