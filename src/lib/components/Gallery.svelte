@@ -58,31 +58,31 @@
 
 <section class="relative bg-black" id="gallery">
 	<div class="container mx-auto px-4">
-		<div class="relative flex items-center justify-center gap-4">
+		<div class="relative flex items-center justify-center gap-8">
 			<!-- Image précédente -->
 			<button
 				type="button"
-				class="relative h-48 w-32 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none focus:ring-2 focus:ring-white/20"
+				class="relative h-48 w-64 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none"
 				onclick={previousImage}
 				aria-label={t('gallery.previous')}
 			>
 				<img
 					src={images[getPreviousIndex(currentIndex)].src}
 					alt={t(images[getPreviousIndex(currentIndex)].altKey)}
-					class="h-full w-full object-cover transition-opacity duration-500 {imageLoaded[0]
+					class="h-full w-full rounded-lg object-contain transition-opacity duration-500 {imageLoaded[0]
 						? 'opacity-100'
 						: 'opacity-0'}"
 					onload={() => handleImageLoad(0)}
 				/>
-				<div class="absolute inset-0 bg-black/60"></div>
+				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
 
 			<!-- Image principale -->
-			<div class="relative h-96 w-[32rem] overflow-hidden">
+			<div class="relative h-96 w-[36rem] overflow-hidden">
 				<img
 					src={images[currentIndex].src}
 					alt={t(images[currentIndex].altKey)}
-					class="h-full w-full object-cover transition-opacity duration-500 {imageLoaded[1]
+					class="h-full w-full rounded-lg object-contain transition-opacity duration-500 {imageLoaded[1]
 						? 'opacity-100'
 						: 'opacity-0'}"
 					onload={() => handleImageLoad(1)}
@@ -92,19 +92,19 @@
 			<!-- Image suivante -->
 			<button
 				type="button"
-				class="relative h-48 w-32 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none focus:ring-2 focus:ring-white/20"
+				class="relative h-48 w-64 cursor-pointer opacity-60 transition-all hover:opacity-80 focus:outline-none"
 				onclick={nextImage}
 				aria-label={t('gallery.next')}
 			>
 				<img
 					src={images[getNextIndex(currentIndex)].src}
 					alt={t(images[getNextIndex(currentIndex)].altKey)}
-					class="h-full w-full object-cover transition-opacity duration-500 {imageLoaded[2]
+					class="h-full w-full rounded-lg object-contain transition-opacity duration-500 {imageLoaded[2]
 						? 'opacity-100'
 						: 'opacity-0'}"
 					onload={() => handleImageLoad(2)}
 				/>
-				<div class="absolute inset-0 bg-black/60"></div>
+				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
 		</div>
 	</div>
