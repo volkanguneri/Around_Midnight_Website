@@ -59,7 +59,7 @@
 <section class="relative bg-black" id="gallery">
 	<div class="container mx-auto px-4">
 		<div class="relative flex items-center justify-center gap-8">
-			<!-- Image précédente -->
+			<!-- Preview Image -->
 			<button
 				type="button"
 				class="relative h-48 w-64 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none"
@@ -77,7 +77,7 @@
 				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
 
-			<!-- Image principale -->
+			<!-- Main Image -->
 			<div class="relative h-96 w-[36rem] overflow-hidden">
 				<img
 					src={images[currentIndex].src}
@@ -89,7 +89,7 @@
 				/>
 			</div>
 
-			<!-- Image suivante -->
+			<!-- Next Image -->
 			<button
 				type="button"
 				class="relative h-48 w-64 cursor-pointer opacity-60 transition-all hover:opacity-80 focus:outline-none"
