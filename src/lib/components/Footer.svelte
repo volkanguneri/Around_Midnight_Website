@@ -7,12 +7,12 @@
 	}
 </script>
 
-<footer class="mt-20 bg-black/80">
+<footer class="mt-10 bg-black/80">
 	<div class="mx-auto max-w-7xl px-4 text-center text-gray-400">
-		<div class="mb-4 flex justify-center space-x-8">
+		<div class="flex justify-center space-x-8">
 			<a
 				href="https://instagram.com"
-				class="text-[#E1306C] transition-transform hover:scale-110"
+				class="text-[#E1306C] drop-shadow-lg transition-transform hover:scale-110"
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Instagram"
@@ -30,7 +30,7 @@
 			</a>
 			<a
 				href="https://facebook.com"
-				class="text-[#4267B2] transition-transform hover:scale-110"
+				class="text-[#4267B2] drop-shadow-lg transition-transform hover:scale-110"
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Facebook"
@@ -48,7 +48,7 @@
 			</a>
 			<a
 				href="https://youtube.com"
-				class="text-[#FF0000] transition-transform hover:scale-110"
+				class="text-[#FF0000] drop-shadow-lg transition-transform hover:scale-110"
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Youtube"
@@ -66,9 +66,11 @@
 			</a>
 		</div>
 		<div class="py-6 text-sm">
-			<div class="space-y-2 md:flex md:items-center md:justify-center md:space-y-0 md:space-x-6">
+			<div class="space-y-2 md:flex md:items-center md:justify-center md:space-x-6 md:space-y-0">
 				<p class="text-xs md:w-auto md:text-left">{t('footer.photography')}</p>
-				<p class="font-medium md:w-auto md:text-center">© {new Date().getFullYear()} Around Midnight</p>
+				<p class="font-medium md:w-auto md:text-center">
+					© {new Date().getFullYear()} Around Midnight
+				</p>
 				<p class="text-xs md:w-auto md:text-right">{t('footer.development')}</p>
 			</div>
 		</div>

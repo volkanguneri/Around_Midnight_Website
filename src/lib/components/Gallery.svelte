@@ -107,5 +107,34 @@
 				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
 		</div>
+
+		<!-- Thumbnails -->
+		<div class="scrollbar-hide mt-4 flex justify-center gap-4 overflow-x-auto px-4">
+			{#each images as image, index}
+				<button
+					type="button"
+					class="relative h-20 w-32 overflow-hidden rounded-lg transition-transform hover:scale-105 focus:outline-none {currentIndex ===
+					index
+						? ''
+						: 'opacity-60 hover:opacity-100'}"
+					onclick={() => {
+						currentIndex = index;
+						imageLoaded = Array(3).fill(false);
+					}}
+				>
+					<img src={image.src} alt={t(image.altKey)} class="h-full w-full object-cover" />
+				</button>
+			{/each}
+		</div>
 	</div>
 </section>
+
+<style>
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+</style>

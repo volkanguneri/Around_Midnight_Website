@@ -15,10 +15,10 @@
 	<section id="musicians" class="mb-4 scroll-mt-16 md:mb-8">
 		<Musicians />
 	</section>
-	<section id="gallery" class="mb-4 scroll-mt-16 md:mb-16">
+	<section id="gallery" class="mb-4 scroll-mt-16 md:mb-20">
 		<Gallery />
 	</section>
-	<section id="videos" class="mb-4 scroll-mt-16 md:mb-16">
+	<section id="videos" class="mb-4 scroll-mt-16 md:mb-20">
 		<Video />
 	</section>
 	<section id="contact" class="scroll-mt-16">
