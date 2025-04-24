@@ -22,9 +22,9 @@
 		<div class="absolute inset-0 bg-black/60"></div>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<div class="mx-auto max-w-4xl px-4">
-				<div class="space-y-4 text-center md:space-y-8">
-					<h1 class="font-moon text-4xl text-white md:text-6xl lg:text-7xl">{t('banner.title')}</h1>
-					<p class="text-lg text-gray-200 md:text-xl lg:text-2xl">{t('banner.subtitle')}</p>
+				<div class="space-y-4 text-center md:space-y-4">
+					<h1 class="font-moon text-4xl md:text-6xl">{t('banner.title')}</h1>
+					<p class="text-lg md:text-xl lg:text-2xl">{t('banner.subtitle')}</p>
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,10 @@
 <script lang="ts">
+	import { t, getCurrentLang, setCurrentLang } from '$lib/i18n/language.svelte';
+
+	function toggleLanguage() {
+		const currentLang = getCurrentLang();
+		setCurrentLang(currentLang === 'fr' ? 'en' : 'fr');
+	}
 </script>
 
 <footer class="mt-20 bg-black/80">
@@ -59,6 +65,12 @@
 				</svg>
 			</a>
 		</div>
-		<p>{new Date().getFullYear()} Around Midnight. All rights reserved.</p>
+		<div class="py-6 text-sm">
+			<div class="space-y-2 md:flex md:items-center md:justify-center md:space-y-0 md:space-x-6">
+				<p class="text-xs md:w-auto md:text-left">{t('footer.photography')}</p>
+				<p class="font-medium md:w-auto md:text-center">© {new Date().getFullYear()} Around Midnight</p>
+				<p class="text-xs md:w-auto md:text-right">{t('footer.development')}</p>
+			</div>
+		</div>
 	</div>
 </footer>

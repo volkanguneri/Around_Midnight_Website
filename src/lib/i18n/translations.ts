@@ -2,6 +2,11 @@ export type Lang = 'fr' | 'en';
 
 export const translations = {
 	fr: {
+		// Footer
+		footer: {
+			photography: 'Photographie par Camille Le Guelec',
+			development: 'Développement web par Volkan Guneri'
+		},
 		// Header
 		menu: {
 			trio: 'Le Trio',
@@ -66,6 +71,11 @@ export const translations = {
 		}
 	},
 	en: {
+		// Footer
+		footer: {
+			photography: 'Photography by Camille Le Guelec',
+			development: 'Web Development by Volkan Guneri'
+		},
 		// Header
 		menu: {
 			trio: 'The Trio',
@@ -129,4 +139,4 @@ export const translations = {
 			}
 		}
 	}
-} as const;
+};

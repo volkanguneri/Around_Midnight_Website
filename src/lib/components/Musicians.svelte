@@ -40,7 +40,7 @@
 					</div>
 					<div class="{i === 1 ? 'md:order-1' : ''} md:w-3/5">
 						<div class="space-y-6 px-4 md:px-12">
-							<h3 class="font-moon text-3xl text-white">{t(`musicians.${musician.id}.name`)}</h3>
+							<h3 class="font-moon text-3xl">{t(`musicians.${musician.id}.name`)}</h3>
 							<div class="space-y-4">
 								<h4 class="font-moon text-lg text-gray-300">
 									{t(`musicians.${musician.id}.instrument`)}

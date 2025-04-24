@@ -12,7 +12,7 @@
 	<section id="trio" class="mb-4 mt-10 scroll-mt-16 md:my-16">
 		<Trio />
 	</section>
-	<section id="musicians" class="mb-4 scroll-mt-16 md:mb-16">
+	<section id="musicians" class="mb-4 scroll-mt-16 md:mb-8">
 		<Musicians />
 	</section>
 	<section id="gallery" class="mb-4 scroll-mt-16 md:mb-16">

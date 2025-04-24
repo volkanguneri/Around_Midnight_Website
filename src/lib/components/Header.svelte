@@ -27,7 +27,7 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 justify-between">
 			<div class="flex items-center">
-				<a href="/" class="font-moon text-xl text-white">Around Midnight</a>
+				<a href="/" class="font-moon text-xl">Around Midnight</a>
 			</div>
 
 			<!-- Desktop menu -->

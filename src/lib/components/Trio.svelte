@@ -21,7 +21,7 @@
 			<div class="mx-auto max-w-lg px-6 sm:px-8">
 				<div class="space-y-3 text-center md:space-y-8">
 					<div
-						class="space-y-4 px-2 text-justify text-xs leading-tight text-gray-100 md:text-lg md:leading-relaxed"
+						class="space-y-4 px-2 text-justify text-xs leading-tight md:text-lg md:leading-relaxed"
 					>
 						{#each t('trio.description') as paragraph}
 							<p>{paragraph}</p>
