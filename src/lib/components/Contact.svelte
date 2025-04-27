@@ -23,16 +23,16 @@
 					<div class="space-y-6 text-center text-lg md:text-3xl">
 						<p>+33 6 58 78 25 61</p>
 						<p>juliette-chevalier35@hotmail.fr</p>
-						<div class="flex justify-center space-x-8 pt-6">
+						<div class="flex justify-center space-x-6 pt-6">
 							<a
 								href="https://instagram.com"
-								class="text-[#E1306C] drop-shadow-lg transition-transform hover:scale-110"
+								class="text-white transition-transform hover:scale-110 hover:opacity-80"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram"
 							>
 								<svg
-									class="h-8 w-8 md:h-10 md:w-10"
+									class="h-6 w-6 md:h-8 md:w-8"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 448 512"
 									fill="currentColor"
@@ -44,13 +44,13 @@
 							</a>
 							<a
 								href="https://facebook.com"
-								class="text-[#4267B2] drop-shadow-lg transition-transform hover:scale-110"
+								class="text-white transition-transform hover:scale-110 hover:opacity-80"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Facebook"
 							>
 								<svg
-									class="h-8 w-8 md:h-10 md:w-10"
+									class="h-6 w-6 md:h-8 md:w-8"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 320 512"
 									fill="currentColor"
@@ -62,13 +62,13 @@
 							</a>
 							<a
 								href="https://youtube.com"
-								class="text-[#FF0000] drop-shadow-lg transition-transform hover:scale-110"
+								class="text-white transition-transform hover:scale-110 hover:opacity-80"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="YouTube"
 							>
 								<svg
-									class="h-8 w-8 md:h-10 md:w-10"
+									class="h-6 w-6 md:h-8 md:w-8"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 576 512"
 									fill="currentColor"
