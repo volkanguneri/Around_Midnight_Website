@@ -25,7 +25,7 @@
 						<p>juliette-chevalier35@hotmail.fr</p>
 						<div class="flex justify-center space-x-6 pt-6">
 							<a
-								href="https://instagram.com"
+								href="https://www.instagram.com/around.midnight.trio/"
 								class="text-white transition-transform hover:scale-110 hover:opacity-80"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -43,7 +43,7 @@
 								</svg>
 							</a>
 							<a
-								href="https://facebook.com"
+								href="https://www.facebook.com/profile.php?id=61575350493374&sk=about"
 								class="text-white transition-transform hover:scale-110 hover:opacity-80"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -61,8 +61,8 @@
 								</svg>
 							</a>
 							<a
-								href="https://youtube.com"
-								class="text-white transition-transform hover:scale-110 hover:opacity-80"
+								href="#"
+								class="text-white transition-transform hover:scale-110 hover:opacity-80 pointer-events-none opacity-50"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="YouTube"
