@@ -33,6 +33,7 @@
 
 	let currentIndex = 0;
 	let imageLoaded = Array(3).fill(false);
+	let touchStartX = 0;
 
 	function getPreviousIndex(current: number): number {
 		return current === 0 ? images.length - 1 : current - 1;
@@ -52,14 +53,28 @@
 		imageLoaded = Array(3).fill(false);
 	}
 
-	const handleImageLoad = (index: number) => {
-		imageLoaded[index] = true;
-	};
+	function handleTouchStart(event: TouchEvent) {
+		touchStartX = event.touches[0].clientX;
+	}
+
+	function handleTouchEnd(event: TouchEvent) {
+		const touchEndX = event.changedTouches[0].clientX;
+		const diffX = touchEndX - touchStartX;
+
+		if (Math.abs(diffX) > 50) {
+			if (diffX > 0) {
+				previousImage();
+			} else {
+				nextImage();
+			}
+		}
+	}
 </script>
 
-<section class="relative bg-black overflow-hidden" id="gallery">
-	<div class="container mx-auto px-4 max-w-[90vw]">
-		<div class="relative flex items-center justify-center gap-4">
+<section class="relative bg-black" id="gallery">
+	<div class="container mx-auto">
+		<!-- Desktop Layout -->
+		<div class="relative hidden items-center justify-center gap-4 md:flex">
 			<!-- Previous Image -->
 			<button
 				type="button"
@@ -147,6 +162,30 @@
 				/>
 				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
+		</div>
+
+		<!-- Mobile Layout -->
+		<div class="md:hidden">
+			<div
+				class="relative mx-auto aspect-[4/3] max-h-[80vh]"
+				ontouchstart={handleTouchStart}
+				ontouchend={handleTouchEnd}
+			>
+				<img
+					src={images[currentIndex].src}
+					alt={t(images[currentIndex].altKey)}
+					class="h-full w-full object-contain"
+				/>
+				<div class="absolute bottom-[10%] left-0 right-0 flex justify-center gap-2">
+					{#each images as _, index}
+						<div
+							class="h-2 w-2 rounded-full {currentIndex === index
+								? 'bg-white shadow-md'
+								: 'border border-white bg-black/30'}"
+						></div>
+					{/each}
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
