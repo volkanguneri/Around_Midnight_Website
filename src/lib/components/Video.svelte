@@ -22,7 +22,7 @@
 </script>
 
 <section class="relative bg-black" id="videos">
-	<div class="container mx-auto px-4">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="grid gap-8 md:grid-cols-2">
 			{#each videos as video}
 				<div class="relative aspect-video w-full overflow-hidden rounded-lg">
