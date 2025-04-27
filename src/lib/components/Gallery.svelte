@@ -10,49 +10,6 @@
 
 	const images: GalleryImage[] = [
 		{
-			src: getOptimizedImagePath('/images/optimized/main.webp'),
-			altKey: 'banner.title'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/trio-photo.webp'),
-			altKey: 'menu.trio'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/juliette.webp'),
-			altKey: 'musicians.juliette.name',
-			alt: 'Juliette Chevalier - Chanteuse du trio de jazz Around Midnight'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/arnaud.webp'),
-			altKey: 'musicians.arnaud.name',
-			alt: 'Arnaud Lacarte - Guitariste du trio de jazz Around Midnight'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/hugues.webp'),
-			altKey: 'musicians.hugues.name',
-			alt: 'Hugues Lasserre - Contrebassiste du trio de jazz Around Midnight'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/DSC_0577.webp'),
-			altKey: 'gallery.concert1',
-			alt: 'Concert Around Midnight'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/DSC_0598.webp'),
-			altKey: 'gallery.concert2',
-			alt: 'Concert Around Midnight'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/DSC_0602.webp'),
-			altKey: 'gallery.concert3',
-			alt: 'Concert Around Midnight'
-		},
-		{
-			src: getOptimizedImagePath('/images/optimized/DSC_0609.webp'),
-			altKey: 'gallery.concert4',
-			alt: 'Concert Around Midnight'
-		},
-		{
 			src: getOptimizedImagePath('/images/optimized/IMG_4007.webp'),
 			altKey: 'gallery.concert5',
 			alt: 'Concert Around Midnight'
@@ -93,14 +50,57 @@
 			alt: 'Concert Around Midnight'
 		},
 		{
-			src: getOptimizedImagePath('/images/optimized/affiche festival.webp'),
+			src: getOptimizedImagePath('/images/optimized/affiche_festival01.webp'),
 			altKey: 'gallery.affiche1',
 			alt: 'Affiche festival Around Midnight'
 		},
 		{
-			src: getOptimizedImagePath('/images/optimized/présentation.webp'),
-			altKey: 'gallery.presentation1',
-			alt: 'Présentation Around Midnight'
+			src: getOptimizedImagePath('/images/optimized/affiche_festival02.webp'),
+			altKey: 'gallery.affiche2',
+			alt: 'Affiche festival Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/DSC_0577.webp'),
+			altKey: 'gallery.concert1',
+			alt: 'Concert Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/DSC_0598.webp'),
+			altKey: 'gallery.concert2',
+			alt: 'Concert Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/DSC_0602.webp'),
+			altKey: 'gallery.concert3',
+			alt: 'Concert Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/DSC_0609.webp'),
+			altKey: 'gallery.concert4',
+			alt: 'Concert Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/main.webp'),
+			altKey: 'banner.title'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/trio-photo.webp'),
+			altKey: 'menu.trio'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/juliette.webp'),
+			altKey: 'musicians.juliette.name',
+			alt: 'Juliette Chevalier - Chanteuse du trio de jazz Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/arnaud.webp'),
+			altKey: 'musicians.arnaud.name',
+			alt: 'Arnaud Lacarte - Guitariste du trio de jazz Around Midnight'
+		},
+		{
+			src: getOptimizedImagePath('/images/optimized/hugues.webp'),
+			altKey: 'musicians.hugues.name',
+			alt: 'Hugues Lasserre - Contrebassiste du trio de jazz Around Midnight'
 		}
 	];
 
