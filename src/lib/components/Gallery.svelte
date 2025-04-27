@@ -57,82 +57,96 @@
 	};
 </script>
 
-<section class="relative bg-black" id="gallery">
-	<div class="container mx-auto px-4">
-		<div class="relative flex items-center justify-center gap-8">
-			<!-- Preview Image -->
+<section class="relative bg-black overflow-hidden" id="gallery">
+	<div class="container mx-auto px-4 max-w-[90vw]">
+		<div class="relative flex items-center justify-center gap-4">
+			<!-- Previous Image -->
 			<button
 				type="button"
-				class="relative h-48 w-64 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none"
-				onclick={previousImage}
-				aria-label={t('gallery.previous')}
+				class="relative h-32 w-40 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none"
+				onclick={() => {
+					currentIndex = getPreviousIndex(currentIndex);
+					imageLoaded = Array(3).fill(false);
+				}}
+				aria-label={t(images[getPreviousIndex(currentIndex)].altKey)}
 			>
 				<img
 					src={images[getPreviousIndex(currentIndex)].src}
 					alt={t(images[getPreviousIndex(currentIndex)].altKey)}
-					class="h-full w-full rounded-lg object-contain transition-opacity duration-500 {imageLoaded[0]
-						? 'opacity-100'
-						: 'opacity-0'}"
-					onload={() => handleImageLoad(0)}
+					class="h-full w-full rounded-lg object-cover transition-opacity duration-500"
 				/>
 				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
 
-			<!-- Main Image -->
-			<div class="relative h-96 w-[36rem] overflow-hidden">
-				<a
-					href={images[currentIndex].src}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="block h-full w-full"
-				>
-					<img
-						src={images[currentIndex].src}
-						alt={t(images[currentIndex].altKey)}
-						class="h-full w-full rounded-lg object-contain transition-opacity duration-500 hover:opacity-90 {imageLoaded[1]
-							? 'opacity-100'
-							: 'opacity-0'}"
-						onload={() => handleImageLoad(1)}
-					/>
-				</a>
+			<!-- Main Image and Navigation -->
+			<div class="flex flex-col items-center">
+				<div class="relative h-[28rem] w-[36rem] overflow-hidden">
+					<a
+						href={images[currentIndex].src}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="block h-full w-full"
+					>
+						<img
+							src={images[currentIndex].src}
+							alt={t(images[currentIndex].altKey)}
+							class="h-full w-full rounded-lg object-contain transition-opacity duration-500 hover:opacity-90"
+						/>
+					</a>
+				</div>
+
+				<!-- Navigation Buttons -->
+				<div class="mt-4 flex justify-center gap-4">
+					<button
+						type="button"
+						class="rounded-full bg-white/10 p-2 text-white hover:bg-white/20"
+						onclick={previousImage}
+						aria-label={t('gallery.previous')}
+					>
+						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 19l-7-7 7-7"
+							/>
+						</svg>
+					</button>
+					<button
+						type="button"
+						class="rounded-full bg-white/10 p-2 text-white hover:bg-white/20"
+						onclick={nextImage}
+						aria-label={t('gallery.next')}
+					>
+						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 5l7 7-7 7"
+							/>
+						</svg>
+					</button>
+				</div>
 			</div>
 
 			<!-- Next Image -->
 			<button
 				type="button"
-				class="relative h-48 w-64 cursor-pointer opacity-60 transition-all hover:opacity-80 focus:outline-none"
-				onclick={nextImage}
-				aria-label={t('gallery.next')}
+				class="relative h-32 w-40 cursor-pointer opacity-40 transition-all hover:opacity-60 focus:outline-none"
+				onclick={() => {
+					currentIndex = getNextIndex(currentIndex);
+					imageLoaded = Array(3).fill(false);
+				}}
+				aria-label={t(images[getNextIndex(currentIndex)].altKey)}
 			>
 				<img
 					src={images[getNextIndex(currentIndex)].src}
 					alt={t(images[getNextIndex(currentIndex)].altKey)}
-					class="h-full w-full rounded-lg object-contain transition-opacity duration-500 {imageLoaded[2]
-						? 'opacity-100'
-						: 'opacity-0'}"
-					onload={() => handleImageLoad(2)}
+					class="h-full w-full rounded-lg object-cover transition-opacity duration-500"
 				/>
 				<div class="absolute inset-0 rounded-lg bg-black/20"></div>
 			</button>
-		</div>
-
-		<!-- Thumbnails -->
-		<div class="scrollbar-hide mt-4 flex justify-center gap-4 overflow-x-auto px-4">
-			{#each images as image, index}
-				<button
-					type="button"
-					class="relative h-20 w-32 overflow-hidden rounded-lg transition-transform hover:scale-105 focus:outline-none {currentIndex ===
-					index
-						? ''
-						: 'opacity-60 hover:opacity-100'}"
-					onclick={() => {
-						currentIndex = index;
-						imageLoaded = Array(3).fill(false);
-					}}
-				>
-					<img src={image.src} alt={t(image.altKey)} class="h-full w-full object-cover" />
-				</button>
-			{/each}
 		</div>
 	</div>
 </section>
