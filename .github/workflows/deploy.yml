@@ -50,6 +50,9 @@ jobs:
         run: |
           pnpm run build
           cp .nojekyll build/
+          cp -r static/images build/
+          cp static/robots.txt build/
+          cp static/sitemap.xml build/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

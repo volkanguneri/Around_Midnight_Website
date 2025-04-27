@@ -6,13 +6,18 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: 'index.html',
+			precompress: false,
 			strict: false
 		}),
 		paths: {
 			base: '/Around_Midnight_Website'
 		},
 		prerender: {
-			handleHttpError: 'warn'
+			handleHttpError: 'warn',
+			default: true
 		}
 	}
 };
