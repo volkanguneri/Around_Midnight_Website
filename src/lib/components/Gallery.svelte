@@ -19,15 +19,18 @@
 		},
 		{
 			src: getOptimizedImagePath('/images/juliette.jpg'),
-			altKey: 'musicians.juliette.name'
+			altKey: 'musicians.juliette.name',
+			alt: 'Juliette Chevalier - Chanteuse du trio de jazz Around Midnight'
 		},
 		{
 			src: getOptimizedImagePath('/images/arnaud.jpg'),
-			altKey: 'musicians.arnaud.name'
+			altKey: 'musicians.arnaud.name',
+			alt: 'Arnaud Lacarte - Guitariste du trio de jazz Around Midnight'
 		},
 		{
 			src: getOptimizedImagePath('/images/hugues.jpg'),
-			altKey: 'musicians.hugues.name'
+			altKey: 'musicians.hugues.name',
+			alt: 'Hugues Lasserre - Contrebassiste du trio de jazz Around Midnight'
 		}
 	];
 
