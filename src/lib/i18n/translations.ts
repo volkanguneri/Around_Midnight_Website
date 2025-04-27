@@ -26,7 +26,7 @@ export const translations = {
 			title: 'Le Trio',
 			description: [
 				"Envie d'une soirée où la musique vous fait vibrer autant que la danse ? Around Midnight est le trio idéal pour donner vie à vos événements blues. Avec un répertoire éclectique mêlant Amy Winehouse, David Bowie, Ella Fitzgerald et bien d'autres, le groupe tisse un univers à la fois envoûtant et énergique.",
-				"La voix intense et expressive de Juliette Chevalier, portée par le jeu virtuose d'Arnaud Lacarte à la guitare et les Hugues Lasserre à la contrebasse, crée une ambiance irrésistible. Entre joie, intensité et émotion, laissez-vous emporter par la profondeur d'une musique vivante, faite pour être partagée pleinement."
+				"La voix intense et expressive de Juliette Chevalier, portée par le jeu virtuose d'Arnaud Lacarte à la guitare et les lignes d'Hugues Lasserre à la contrebasse, crée une ambiance irrésistible. Entre joie, intensité et émotion, laissez-vous emporter par la profondeur d'une musique vivante, faite pour être partagée pleinement."
 			]
 		},
 		// Musicians section
@@ -35,7 +35,7 @@ export const translations = {
 			juliette: {
 				name: 'Juliette Chevalier',
 				instrument: 'Chant',
-				bio: "Évoluant dans le monde artistique depuis l'enfance, je débute tout naturellement la musique à l'âge de 7 ans au conservatoire de Rennes où j'obtiens mon diplôme de guitare classique. En parallèle de ces études de guitare je commence le chant et intègre rapidement plusieurs formations dans différents styles : Pop, rock, chanson française puis jazz et bossa nova. En 2023, j'obtiens mon diplôme de Jazz vocal (DEM) au conservatoire de Rennes.\n\nJe fais partie actuellement de plusieurs ensembles, Quartet vocal Sweet Poppins, The Strawberry Fields (tribute de The Beatles). Riche de tous ces apprentissages, je cherche pendant plusieurs années des musiciens avec qui créer un projet qui me ressemble, ou ma voix pourra être écoutée et appréciée. C'est à l'été 2025 que je rencontre Arnaud Lacarte avec qui le rêve deviendra réalité."
+				bio: "Évoluant dans le monde artistique depuis l'enfance, Juliette débute tout naturellement la musique à l'âge de 7 ans au conservatoire de Rennes où elle obtient son diplôme de guitare classique. En parallèle de ses études de guitare elle commence le chant et intègre rapidement plusieurs formations dans différents styles : Pop, rock, chanson française puis jazz et bossa nova. En 2023, elle obtient son diplôme de Jazz vocal (DEM) au conservatoire de Rennes.\n\nJuliette fait actuellement partie de plusieurs ensembles, Quartet vocal Sweet Poppins, The Strawberry Fields (tribute de The Beatles). Riche de tous ces apprentissages, elle cherche pendant plusieurs années des musiciens avec qui créer un projet qui lui ressemble, ou sa voix pourra être écoutée et appréciée. C'est à l'été 2025 que celle-ci rencontre Arnaud Lacarte avec qui le rêve deviendra réalité."
 			},
 			arnaud: {
 				name: 'Arnaud Lacarte',
@@ -104,7 +104,7 @@ export const translations = {
 			juliette: {
 				name: 'Juliette Chevalier',
 				instrument: 'Vocals',
-				bio: 'Growing up in the artistic world since childhood, I naturally began music at the age of 7 at the Rennes Conservatory where I obtained my classical guitar diploma. Alongside my guitar studies, I started singing and quickly joined several bands in different styles: Pop, rock, French songs, then jazz and bossa nova. In 2023, I obtained my Jazz Vocal diploma (DEM) at the Rennes Conservatory.\n\nI am currently part of several ensembles, including the Sweet Poppins Vocal Quartet and The Strawberry Fields (Beatles tribute). Enriched by all these learning experiences, I spent several years looking for musicians with whom I could create a project that reflects who I am, where my voice could be heard and appreciated. It was in the summer of 2025 that I met Arnaud Lacarte, with whom the dream would become reality.'
+				bio: 'Growing up in the artistic world since childhood, Juliette naturally began music at the age of 7 at the Rennes Conservatory where she obtained her classical guitar diploma. Alongside her guitar studies, she started singing and quickly joined several bands in different styles: Pop, rock, French songs, then jazz and bossa nova. In 2023, she obtained her Jazz Vocal diploma (DEM) at the Rennes Conservatory.\n\nJuliette is currently part of several ensembles, including the Sweet Poppins Vocal Quartet and The Strawberry Fields (Beatles tribute). Enriched by all these learning experiences, she spent several years looking for musicians with whom she could create a project that reflects who she is, where her voice could be heard and appreciated. It was in the summer of 2025 that she met Arnaud Lacarte, with whom the dream would become reality.'
 			},
 			arnaud: {
 				name: 'Arnaud Lacarte',
