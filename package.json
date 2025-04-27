@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && node --experimental-json-modules scripts/copy-optimized-images.js",
 		"preview": "vite preview",
 		"optimize-images": "node --experimental-json-modules scripts/optimize-images.js",
 		"prepare": "svelte-kit sync || echo ''",
