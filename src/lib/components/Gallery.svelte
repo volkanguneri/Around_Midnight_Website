@@ -6,6 +6,7 @@
 	interface GalleryImage {
 		src: string;
 		altKey: string;
+		alt?: string; // Optionnel pour la compatibilité avec les images existantes
 	}
 
 	const images: GalleryImage[] = [

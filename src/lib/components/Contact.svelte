@@ -10,6 +10,11 @@
 
 <section class="relative">
 	<div class="relative w-full">
+		<!-- This `img` element displays an optimized contact image with a fade-in effect. 
+		     The `class` attribute dynamically changes the opacity based on the `imageLoaded` state:
+		     - When `imageLoaded` is true: The image has full opacity (`opacity-100`).
+		     - When `imageLoaded` is false: The image is transparent (`opacity-0`).
+		     The `transition-opacity` and `duration-1000` classes create a smooth transition effect over 1 second. -->
 		<img
 			src={getOptimizedImagePath('/images/contact.jpg')}
 			alt="Contact Around Midnight"
@@ -60,12 +65,9 @@
 									/>
 								</svg>
 							</a>
-							<a
-								href="#"
-								class="text-white transition-transform hover:scale-110 hover:opacity-80 pointer-events-none opacity-50"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="YouTube"
+							<span
+								class="text-white opacity-50"
+								aria-label="YouTube (à venir)"
 							>
 								<svg
 									class="h-6 w-6 md:h-8 md:w-8"
@@ -77,7 +79,7 @@
 										d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
 									/>
 								</svg>
-							</a>
+							</span>
 						</div>
 					</div>
 				</div>
