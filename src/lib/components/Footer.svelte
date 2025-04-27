@@ -10,7 +10,15 @@
 				<p class="font-medium md:w-auto md:text-center">
 					© {new Date().getFullYear()} Around Midnight
 				</p>
-				<p class="text-xs md:w-auto md:text-right">{t('footer.development')}</p>
+				<p class="text-xs md:w-auto md:text-right">
+					{t('footer.development')}
+					<a
+						href="https://volkanguneri.github.io/portfolio-front/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-white transition-colors hover:text-gray-300">Volkan Guneri</a
+					>
+				</p>
 			</div>
 		</div>
 	</div>

@@ -5,7 +5,7 @@ export const translations = {
 		// Footer
 		footer: {
 			photography: 'Photographie par Camille Le Guelec',
-			development: 'Développement web par Volkan Guneri'
+			development: 'Développement web par'
 		},
 		// Header
 		menu: {
@@ -51,6 +51,12 @@ export const translations = {
 		// Gallery
 		gallery: {
 			title: 'Galerie',
+			concert1: 'Concert Around Midnight',
+			concert2: 'Concert Around Midnight',
+			concert3: 'Concert Around Midnight',
+			concert4: 'Concert Around Midnight',
+			affiche1: 'Affiche festival Around Midnight',
+			presentation1: 'Présentation Around Midnight',
 			description: 'Découvrez nos moments sur scène'
 		},
 		// Videos
@@ -60,21 +66,14 @@ export const translations = {
 		},
 		// Contact
 		contact: {
-			title: 'Contact',
-			description: 'Contactez-nous pour vos événements',
-			form: {
-				name: 'Nom',
-				email: 'Email',
-				message: 'Message',
-				send: 'Envoyer'
-			}
+			title: 'Contact'
 		}
 	},
 	en: {
 		// Footer
 		footer: {
 			photography: 'Photography by Camille Le Guelec',
-			development: 'Web Development by Volkan Guneri'
+			development: 'Web Development by'
 		},
 		// Header
 		menu: {
@@ -120,6 +119,12 @@ export const translations = {
 		// Gallery
 		gallery: {
 			title: 'Gallery',
+			concert1: 'Around Midnight Concert',
+			concert2: 'Around Midnight Concert',
+			concert3: 'Around Midnight Concert',
+			concert4: 'Around Midnight Concert',
+			affiche1: 'Around Midnight Festival Poster',
+			presentation1: 'Around Midnight Presentation',
 			description: 'Discover our stage moments'
 		},
 		// Videos
@@ -129,14 +134,7 @@ export const translations = {
 		},
 		// Contact
 		contact: {
-			title: 'Contact',
-			description: 'Contact us for your events',
-			form: {
-				name: 'Name',
-				email: 'Email',
-				message: 'Message',
-				send: 'Send'
-			}
+			title: 'Contact'
 		}
 	}
 };
