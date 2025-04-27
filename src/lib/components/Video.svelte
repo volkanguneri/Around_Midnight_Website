@@ -45,7 +45,7 @@
 								class="absolute inset-0 h-full w-full object-cover"
 							/>
 							<div
-								class="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-transform group-hover:scale-110"
+								class="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-transform group-hover:scale-110"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
