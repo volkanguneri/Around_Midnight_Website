@@ -18,7 +18,7 @@ export const translations = {
 		// Banner
 		banner: {
 			title: 'Around Midnight',
-			subtitle: 'Blues & Jazz pour danser',
+			subtitle: 'Blues & Jazz',
 			cta: 'Découvrir'
 		},
 		// Trio section
@@ -87,7 +87,7 @@ export const translations = {
 		// Banner
 		banner: {
 			title: 'Around Midnight',
-			subtitle: 'Blues & Jazz to dance',
+			subtitle: 'Blues & Jazz',
 			cta: 'Discover'
 		},
 		// Trio section
