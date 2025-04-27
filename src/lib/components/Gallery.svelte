@@ -80,14 +80,21 @@
 
 			<!-- Main Image -->
 			<div class="relative h-96 w-[36rem] overflow-hidden">
-				<img
-					src={images[currentIndex].src}
-					alt={t(images[currentIndex].altKey)}
-					class="h-full w-full rounded-lg object-contain transition-opacity duration-500 {imageLoaded[1]
-						? 'opacity-100'
-						: 'opacity-0'}"
-					onload={() => handleImageLoad(1)}
-				/>
+				<a
+					href={images[currentIndex].src}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="block h-full w-full"
+				>
+					<img
+						src={images[currentIndex].src}
+						alt={t(images[currentIndex].altKey)}
+						class="h-full w-full rounded-lg object-contain transition-opacity duration-500 hover:opacity-90 {imageLoaded[1]
+							? 'opacity-100'
+							: 'opacity-0'}"
+						onload={() => handleImageLoad(1)}
+					/>
+				</a>
 			</div>
 
 			<!-- Next Image -->
