@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getCurrentLang, setCurrentLang, t } from '$lib/i18n';
+	import { getAssetPath } from '$lib/utils/paths';
 	let isMenuOpen = $state(false);
 	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
@@ -50,14 +51,22 @@
 					class:opacity-80={getCurrentLang() === 'fr'}
 					onclick={() => setCurrentLang('fr')}
 				>
-					<img src="/images/fr-flag.svg" alt="Français" class="h-4 w-6 object-cover" />
+					<img
+						src={getAssetPath('/images/fr-flag.svg')}
+						alt="Français"
+						class="h-4 w-6 object-cover"
+					/>
 				</button>
 				<button
 					class="flex items-center space-x-1 opacity-50 transition-opacity hover:opacity-80"
 					class:opacity-80={getCurrentLang() === 'en'}
 					onclick={() => setCurrentLang('en')}
 				>
-					<img src="/images/en-flag.svg" alt="English" class="h-4 w-6 object-cover" />
+					<img
+						src={getAssetPath('/images/en-flag.svg')}
+						alt="English"
+						class="h-4 w-6 object-cover"
+					/>
 				</button>
 			</div>
 
@@ -115,7 +124,11 @@
 							isMenuOpen = false;
 						}}
 					>
-						<img src="/images/fr-flag.svg" alt="Français" class="h-4 w-6 object-cover" />
+						<img
+							src={getAssetPath('/images/fr-flag.svg')}
+							alt="Français"
+							class="h-4 w-6 object-cover"
+						/>
 					</button>
 					<button
 						class="flex items-center space-x-1 opacity-70 transition-opacity hover:opacity-100"
@@ -125,7 +138,11 @@
 							isMenuOpen = false;
 						}}
 					>
-						<img src="/images/en-flag.svg" alt="English" class="h-4 w-6 object-cover" />
+						<img
+							src={getAssetPath('/images/en-flag.svg')}
+							alt="English"
+							class="h-4 w-6 object-cover"
+						/>
 					</button>
 				</div>
 			</div>

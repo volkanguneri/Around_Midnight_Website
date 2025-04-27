@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { t } from '$lib/i18n/language.svelte';
+	import { getAssetPath } from '$lib/utils/paths';
 
 	interface Musician {
 		id: string;
@@ -9,15 +10,15 @@
 	const musicians: Musician[] = [
 		{
 			id: 'juliette',
-			imageSrc: '/images/juliette.jpg'
+			imageSrc: getAssetPath('/images/juliette.jpg')
 		},
 		{
 			id: 'arnaud',
-			imageSrc: '/images/arnaud.jpg'
+			imageSrc: getAssetPath('/images/arnaud.jpg')
 		},
 		{
 			id: 'hugues',
-			imageSrc: '/images/hugues.jpg'
+			imageSrc: getAssetPath('/images/hugues.jpg')
 		}
 	];
 </script>

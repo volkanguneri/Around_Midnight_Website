@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { getAssetPath } from '$lib/utils/paths';
 	let imageLoaded = false;
 
 	onMount(() => {
@@ -10,7 +11,7 @@
 <section class="relative">
 	<div class="relative w-full">
 		<img
-			src="/images/contact.jpg"
+			src={getAssetPath('/images/contact.jpg')}
 			alt="Contact Around Midnight"
 			class="w-full transition-opacity duration-1000 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
 			onload={() => (imageLoaded = true)}
