@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { t } from '$lib/i18n/language.svelte';
-	import { getAssetPath } from '$lib/utils/paths';
+	import { getOptimizedImagePath } from '$lib/utils/images';
 
 	let imageLoaded = false;
 
@@ -13,7 +13,7 @@
 <section class="relative" id="banner">
 	<div class="relative w-full bg-black md:h-screen">
 		<img
-			src={getAssetPath('/images/main.jpg')}
+			src={getOptimizedImagePath('/images/main.jpg')}
 			alt="Around Midnight Banner"
 			class="h-full w-full object-contain transition-opacity duration-1000 md:object-cover {imageLoaded
 				? 'opacity-100'

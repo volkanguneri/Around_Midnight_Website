@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { t } from '$lib/i18n';
-	import { getAssetPath } from '$lib/utils/paths';
+	import { getOptimizedImagePath } from '$lib/utils/images';
 	let imageLoaded = false;
 
 	onMount(() => {
@@ -12,7 +12,7 @@
 <section class="relative" id="trio">
 	<div class="relative w-full">
 		<img
-			src={getAssetPath('/images/trio-photo.jpg')}
+			src={getOptimizedImagePath('/images/trio-photo.jpg')}
 			alt="Around Midnight Trio"
 			class="w-full transition-opacity duration-1000 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
 			onload={() => (imageLoaded = true)}

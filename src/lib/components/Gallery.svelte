@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { t } from '$lib/i18n/language.svelte';
-	import { getAssetPath } from '$lib/utils/paths';
+	import { getOptimizedImagePath } from '$lib/utils/images';
 
 	interface GalleryImage {
 		src: string;
@@ -10,23 +10,23 @@
 
 	const images: GalleryImage[] = [
 		{
-			src: getAssetPath('/images/main.jpg'),
+			src: getOptimizedImagePath('/images/main.jpg'),
 			altKey: 'banner.title'
 		},
 		{
-			src: getAssetPath('/images/trio-photo.jpg'),
+			src: getOptimizedImagePath('/images/trio-photo.jpg'),
 			altKey: 'menu.trio'
 		},
 		{
-			src: getAssetPath('/images/juliette.jpg'),
+			src: getOptimizedImagePath('/images/juliette.jpg'),
 			altKey: 'musicians.juliette.name'
 		},
 		{
-			src: getAssetPath('/images/arnaud.jpg'),
+			src: getOptimizedImagePath('/images/arnaud.jpg'),
 			altKey: 'musicians.arnaud.name'
 		},
 		{
-			src: getAssetPath('/images/hugues.jpg'),
+			src: getOptimizedImagePath('/images/hugues.jpg'),
 			altKey: 'musicians.hugues.name'
 		}
 	];
