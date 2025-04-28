@@ -36,7 +36,7 @@
 				{#each menuItems as item}
 					<a
 						href={item.href}
-						class="font-moon text-gray-300 transition-colors duration-200 hover:text-white"
+						class="font-moon transition-colors duration-200 hover:text-white"
 						onclick={(e) => handleClick(e, item.href)}
 					>
 						{t(item.key)}

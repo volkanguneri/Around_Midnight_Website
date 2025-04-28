@@ -43,10 +43,10 @@
 						<div class="space-y-6 px-4 md:px-12">
 							<h3 class="font-moon text-3xl">{t(`musicians.${musician.id}.name`)}</h3>
 							<div class="space-y-4">
-								<h4 class="font-moon text-lg text-gray-300">
+								<h4 class="font-moon text-lg">
 									{t(`musicians.${musician.id}.instrument`)}
 								</h4>
-								<div class="space-y-4 text-gray-300">
+								<div class="space-y-4">
 									<p class="mb-10 text-justify">{t(`musicians.${musician.id}.bio`)}</p>
 								</div>
 							</div>
