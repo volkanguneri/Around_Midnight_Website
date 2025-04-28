@@ -9,18 +9,20 @@
 </script>
 
 <section class="relative">
-	<div class="relative w-full">
-		<!-- This `img` element displays an optimized contact image with a fade-in effect. 
-		     The `class` attribute dynamically changes the opacity based on the `imageLoaded` state:
-		     - When `imageLoaded` is true: The image has full opacity (`opacity-100`).
-		     - When `imageLoaded` is false: The image is transparent (`opacity-0`).
-		     The `transition-opacity` and `duration-1000` classes create a smooth transition effect over 1 second. -->
-		<img
-			src={getOptimizedImagePath('/images/contact.jpg')}
-			alt="Contact Around Midnight"
-			class="w-full transition-opacity duration-1000 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
-			onload={() => (imageLoaded = true)}
-		/>
+	<div class="relative w-full bg-black">
+		<div class="relative w-full">
+			<picture>
+				<source media="(min-width: 768px)" srcset={getOptimizedImagePath('/images/contact.jpg')} />
+				<img
+					src={getOptimizedImagePath('/images/trioBlack&White.jpg')}
+					alt="Contact Around Midnight"
+					class="w-full object-cover object-[60%_40%] transition-opacity duration-1000 md:object-center {imageLoaded
+						? 'opacity-100'
+						: 'opacity-0'}"
+					onload={() => (imageLoaded = true)}
+				/>
+			</picture>
+		</div>
 		<div class="absolute inset-0 bg-black/60"></div>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<div class="mx-auto max-w-xl px-4">
