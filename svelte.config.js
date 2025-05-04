@@ -9,9 +9,7 @@ const config = {
 			fallback: 'index.html',
 			strict: false
 		}),
-		paths: {
-			base: '/Around_Midnight_Website'
-		},
+
 		prerender: {
 			handleHttpError: 'warn',
 			entries: ['*']
