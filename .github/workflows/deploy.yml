@@ -50,6 +50,7 @@ jobs:
         run: |
           pnpm run build
           cp .nojekyll build/
+          cp CNAME build/
           mkdir -p build/images/optimized
           cp -r static/images/optimized/* build/images/optimized/
           cp static/robots.txt build/

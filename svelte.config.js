@@ -13,6 +13,11 @@ const config = {
 		prerender: {
 			handleHttpError: 'warn',
 			entries: ['*']
+		},
+		
+		// Ajout du base path pour GitHub Pages
+		paths: {
+			base: ''
 		}
 	}
 };
