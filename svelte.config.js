@@ -15,7 +15,6 @@ const config = {
 			entries: ['*']
 		},
 		
-		// Ajout du base path pour GitHub Pages
 		paths: {
 			base: ''
 		}
