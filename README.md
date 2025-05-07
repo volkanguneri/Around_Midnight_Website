@@ -1,38 +1,78 @@
-# sv
+# Around Midnight - Site Web Officiel
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![Around Midnight](https://trioaroundmidnight.fr/logo.png)
 
-## Creating a project
+## À propos
 
-If you're seeing this, you've probably already done this step. Congrats!
+Site web officiel du trio de jazz "Around Midnight". Ce site est développé avec SvelteKit et déployé sur GitHub Pages à l'adresse [trioaroundmidnight.fr](https://trioaroundmidnight.fr).
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Technologies utilisées
 
-# create a new project in my-app
-npx sv create my-app
-```
+- [SvelteKit](https://kit.svelte.dev/) - Framework web
+- [TypeScript](https://www.typescriptlang.org/) - Langage de programmation
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
+- [Vite](https://vitejs.dev/) - Outil de build
+- [GitHub Pages](https://pages.github.com/) - Hébergement
 
-## Developing
+## Développement
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prérequis
 
-```bash
-npm run dev
+- [Node.js](https://nodejs.org/) (version recommandée : 18.x ou supérieure)
+- [pnpm](https://pnpm.io/) (gestionnaire de paquets)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+### Installation
 
 ```bash
-npm run build
+# Cloner le dépôt
+git clone https://github.com/votre-utilisateur/around-midnight.git
+cd around-midnight
+
+# Installer les dépendances
+pnpm install
 ```
 
-You can preview the production build with `npm run preview`.
+### Scripts disponibles
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+# Lancer le serveur de développement
+pnpm dev
+
+# Construire le site pour la production
+pnpm build
+
+# Prévisualiser la version de production
+pnpm preview
+
+# Optimiser les images
+pnpm optimize-images
+
+# Vérifier le code
+pnpm check
+
+# Formater le code
+pnpm format
+
+# Linter le code
+pnpm lint
+
+# Exécuter les tests
+pnpm test
+```
+
+## Déploiement
+
+Le site est automatiquement déployé sur GitHub Pages à chaque push sur la branche principale. La configuration de déploiement se trouve dans le dossier `.github/workflows`.
+
+## Structure du projet
+
+- `src/` - Code source du site
+  - `lib/` - Composants et utilitaires
+  - `routes/` - Pages du site
+- `static/` - Fichiers statiques (images, fonts, etc.)
+- `public/` - Fichiers publics copiés à la racine du site
+- `scripts/` - Scripts utilitaires
+
+## Contact
+
+Pour toute question concernant le site, veuillez contacter [contact@trioaroundmidnight.fr](mailto:contact@trioaroundmidnight.fr).
