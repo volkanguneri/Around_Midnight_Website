@@ -1,5 +1,6 @@
 import sharp from 'sharp';
-import { join } from 'path';
+import fs from 'fs';
+import path from 'path';
 
 // Create a new image with a black background
 const size = 512;
@@ -14,17 +15,23 @@ const svgText = `
 </svg>
 `;
 
-// Output path
-const outputPath = join('static', 'favicon.png');
+// Output paths
+const staticPath = path.resolve('static', 'favicon.png');
+const svgStaticPath = path.resolve('static', 'favicon.svg');
 
-// Generate the favicon
+// Generate the favicon PNG
 sharp(Buffer.from(svgText))
   .resize(512, 512)
   .png()
-  .toFile(outputPath)
+  .toFile(staticPath)
   .then(() => {
-    console.log(`Favicon created at: ${outputPath}`);
+    console.log(`Favicon PNG created at: ${staticPath}`);
   })
   .catch(err => {
-    console.error('Error creating favicon:', err);
+    console.error('Error creating favicon PNG:', err);
   });
+
+// Save the SVG file
+fs.writeFileSync(svgStaticPath, svgText);
+console.log(`Favicon SVG created at: ${svgStaticPath}`);
+
