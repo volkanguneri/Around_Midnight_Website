@@ -14,7 +14,7 @@ const config = {
 			handleHttpError: 'warn',
 			entries: ['*']
 		},
-		
+
 		paths: {
 			base: ''
 		}
